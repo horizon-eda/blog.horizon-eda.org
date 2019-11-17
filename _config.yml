@@ -1,1 +1,7 @@
-theme: jekyll-theme-minimal
+theme: minima
+title: Horizon EDA Blog
+description: >- # this means to ignore newlines until "baseurl:"
+  Tales from the development of Horizon EDA.
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  horizon-eda
