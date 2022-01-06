@@ -10,9 +10,9 @@ As with all nontrivial software projects these days, Horizon EDA is
 built on top a multitude of libraries and APIs. This post reflects on my 
 experiences I've had interacting with them.
 
-# Excellent
+## Excellent
 
-## SQLite
+### SQLite
 
 Despite having "Lite" in its name, I've never been let down by SQLite 
 in terms of SQL features. Especially the support for recursive common 
@@ -20,7 +20,7 @@ table expression has proven invaluable for resolving dependencies
 among pool items. Its C API is straightforward to use without any bad 
 surprises.
 
-## Curl
+### Curl
 
 Same as SQLite, curl falls into the "no one ever got fired for using 
 it" category, so when the need came to do HTTP requests, I went with it and wrote a 
@@ -28,7 +28,7 @@ it" category, so when the need came to do HTTP requests, I went with it and wrot
 Curl's easy mode API actually lives up to its name and doesn't add any 
 unexpected complexity.
 
-## ZeroMQ
+### ZeroMQ
 
 ZeroMQ is used in Horizon EDA for inter-process communication between 
 the pool/project manager and the interactive manipulator (board, 
@@ -41,20 +41,20 @@ promptly fixed) I have nothing negative to say about ZeroMQ as well and
 highly recommend it as an easy-to-use alternative to TCP sockets if 
 both sides are to be implemented.
 
-## JSON for Modern C++ 
+### JSON for Modern C++ 
 
 This library is used throughout Horizon EDA for reading and writing 
 JSON and it works so well that I almost forgot mentioning it here. If 
 you need to interact with JSON in C++, look no further!
 
-## Clipper
+### Clipper
 
 Without Clipper, Horizon EDA wouldn't have DRC, filled planes and 3D preview as it 
 provides boolean and grow/shrink operations on polygons. I've had zero 
 issues with it in terms of quality of the algorithms and its API is 
 free from bad surprises.
 
-## KiCad Router
+### KiCad Router
 
 Despite not being a library (or not intended as such) it's worth 
 mentioning the KiCad router in this post, since without it, Horizon 
@@ -66,9 +66,9 @@ There were some impedance mismatches down the road such the representation of
 pads, but overall the effort it took to integrate the 
 router paid off very well.
 
-# Good
+## Good
 
-## libgit2
+### libgit2
 
 For the "Remote" tab in the pool manager, I needed a way to do git 
 operations from C++. I quickly ruled out shelling out the `git` 
@@ -83,7 +83,7 @@ inner workings. On the upside, I now know a lot more about git than
 before. If it had and easy mode like curl, it'd have made it 
 into the Excellent category.
 
-## Gtkmm/Glibmm/Giomm (C++ bindings to the GNOME platform)
+### Gtkmm/Glibmm/Giomm (C++ bindings to the GNOME platform)
 
 All in all, Gtkmm and the like do a really good job at mapping GNOME's 
 GObject-based APIs to C++ in a way that works well with modern C++ 
@@ -91,7 +91,7 @@ concepts. Glib itself also made running Horizon EDA on Windows much
 easier as it provides a reasonable abstraction for OS-specific APIs 
 such as file operations and process management.
 
-## Gtk
+### Gtk
 
 Due to it's central role as the UI toolkit, Gtk deserves its own 
 section. As with any UI toolkit, the application is
@@ -138,7 +138,7 @@ Nevertheless, I still recommend Gtk as a great library to develop
 applications for the Linux desktop and with some limitations as a 
 cross-platform application toolkit.
 
-## OpenGL
+### OpenGL
 
 OpenGL sits in a similar spot as Gtk since it's unlikely that Horizon EDA 
 will ever move away from it. After having moved past the initial 
@@ -147,9 +147,9 @@ to use for 2D and simple 3D rendering. There might be other nicer APIs,
 but since my understanding of 3D graphics got shaped by OpenGL, it's my 
 local optimum for now.
 
-# Ugly
+## Ugly
 
-## Open CASCADE
+### Open CASCADE
 
 When it comes, to importing and exporting 3D models in the STEP format, 
 Open CASCADE is the only viable open source option out there. Since the 
