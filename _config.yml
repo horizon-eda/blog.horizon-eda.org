@@ -1,5 +1,6 @@
 theme: minima
 title: Horizon EDA Blog
+timezone: Etc/UTC
 description: >- # this means to ignore newlines until "baseurl:"
   Tales from the development of Horizon EDA.
 #baseurl: "" # the subpath of your site, e.g. /blog
