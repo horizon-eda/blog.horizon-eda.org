@@ -11,4 +11,10 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
   <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"0x83",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
+  <script src="/assets/js/anchor.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+      anchors.add();
+    });
+  </script>
 </head>
