@@ -5,7 +5,7 @@ permalink: /comments/
 ---
 
 Since this blog is just static HTML, use one of these ways to write comments:
- - Start a topic on [Discourse](https://horizon-eda.discourse.group/)
+ - Start a topic on [GitHub Discussions](https://github.com/horizon-eda/horizon/discussions/)
  - Post to the thread on [mikrocontroller.net](https://www.mikrocontroller.net/topic/417908) (German)
  - Post to the thread on the [EEVBlog Forum](https://www.eevblog.com/forum/eda/horizon-eda-version-1-0!/new/)
  - Join the `#horzion-eda` IRC channel on libera.chat
